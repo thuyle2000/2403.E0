@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <h2>FORM HTML Demo</h2>
+    <hr>
+
+    <form action="index.html" method="get">
+        <div>
+            <label for="">input your name</label>
+            <input type="text" name="ten" id="yourName"
+            required
+            placeholder="nhap ten cua ban" />
+        </div>
+
+        <div>
+            <label for="">input your password</label>
+            <input type="password" name="matMa" id="yourPass"
+            required
+            placeholder="nhap mat ma cua ban" />
+        </div>
+
+        <div>
+            <label for="">input your age</label>
+            <input type="number" name="tuoi" id="yourAge"
+            min="10" max="100" value="18" />
+        </div>
+        <div>
+            <label for="">input your gender</label>
+            <input type="radio" name="gtinh" id="male" value="nam" checked/> male
+            <input type="radio" name="gtinh" id="female" value="nu"/> female
+            <input type="radio" name="gtinh" id="other" value="khac"/> other
+        </div>
+
+        <div>
+            <label for="">input your country</label>
+            <select name="quocGia" id="country">
+                <option value="VN">Vietnam</option>
+                <option value="LA">Laos</option>
+                <option value="CA">Campuchea</option>
+                <option value="US" selected>United States</option>
+                <option value="UK">United Kingdom</option>
+            </select>
+        </div>
+
+        <div>
+            <button type="submit">OK</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+
+</body>
+</html>

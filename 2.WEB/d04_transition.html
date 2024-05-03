@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        span{
+            font-size: 1.5em;
+            color: green;
+            font-weight: bold;
+        }
+
+        p{
+            line-height: 30px;
+            transition: color 3s ;
+        }
+
+        p:hover{
+            color: red;
+        }
+
+        div.hinhvuong{
+            width: 200px;
+            height: 200px;
+            /* background-color: yellow; */
+            background-image: url(images/car2.png);
+            background-size: cover;
+            
+            /* transition: all 3s ; */
+            transition-property: 'background-image';
+            transition-duration: 4s;
+        }
+
+        div.hinhvuong:hover{
+            /* background-color: orangered; */
+            border-radius: 50%;
+            box-shadow: 3px 3px 3px gray;
+            background-image: url(images/car1.png);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Transition CSS Demo</h2>
+        <hr>
+        <p>
+            <span>CSS Transitions</span> <br>
+            CSS transitions allows you to change property values smoothly, over a given duration.
+        </p>
+
+        <div class="hinhvuong"></div>
+    </div>
+</body>
+
+</html>

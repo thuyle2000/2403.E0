@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        div.hinhtron{
+            width: 100px;
+            height: 100px ;
+            background-color: yellow;
+            border-radius: 50%;
+
+            position: relative;
+
+            animation-name: run;        /* ten cua animation */
+            animation-duration: 4s;     /* thoi gian chay hieu ung*/
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 2s;
+        }
+
+        /* dinh nghia tap key frame cho anination 'run' */
+        @keyframes run {
+            0%{background-color: yellow; top: 0px; left: 0px;}
+            25%{background-color: orange; top: 220px; left: 400px;}
+            50%{background-color: red; top: 00px; left: 400px;}
+            75%{background-color: rgb(0, 255, 204); top: 250px; left: 0px;}
+            100%{background-color: yellow; top: 0px; left: 0px;}
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Animation CSS Demo </h2>
+    <hr>
+    <div class="hinhtron"></div>
+</body>
+</html>

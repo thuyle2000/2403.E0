@@ -1,0 +1,50 @@
+/* mo ta css cua trang d01.html */
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 70%;
+    margin:auto;
+}
+
+img{
+    width: 60%;
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+}
+
+p{
+    text-align: justify;
+}
+
+/* css thuoc file index.html */
+header{
+    background-color: antiquewhite;
+}
+.logo{
+    width: 96px;
+}
+header span{
+    font-size: 2em;
+    padding-left: 30px;
+    color: rgb(255, 0, 149);
+    font-weight: bold;
+    text-shadow: 2px 2px 2px gray;
+}
+
+nav{
+    padding: 10px;
+}
+nav a{
+    padding: 10px;
+}
+footer{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 3px solid salmon;
+    background-color:black;
+    color: whitesmoke;
+}

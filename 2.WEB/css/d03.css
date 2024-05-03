@@ -1,0 +1,19 @@
+/* css ap dung cho file d03_css.html */
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.summer{
+    color: black;
+}
+
+.winter{
+    color: white;
+    background-color: blue;
+}
+
+#key{
+    font-weight: bold;
+    text-indent: 20px;
+}
