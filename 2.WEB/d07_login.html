@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+    <link rel="stylesheet" href="css/form.css">
+    <script src="js/d07_login.js"></script>
+</head>
+<body>
+    <h2>event html demo</h2>
+    <hr>
+    <form action="index.html" 
+    name="formLOG" id="formLOG"
+    onsubmit="return kiemTraDN();">
+
+        <h2>
+            Login
+        </h2>
+        
+        <div>
+            <label for="">username</label>
+            <input type="text" name="uid" id="uid" placeholder="ten tai khoan dang nhap"
+            value="aptech"
+            required> 
+        </div>
+
+        <div>
+            <label for="">password</label>
+            <input type="password" name="pwd" id="pwd"
+            placeholder="mat khau" 
+            value="123"
+            required>
+        </div>
+
+        <div style="margin-top: 30px;text-align: center;">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+</body>
+</html>
