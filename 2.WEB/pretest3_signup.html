@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pretest3-signup</title>
+    <link rel="stylesheet" href="css/form.css">
+    <script src="js/pretest3_signup.js"></script>
+</head>
+
+<body>
+    <div>
+        <form action="" onsubmit="return kiemTraDK();">
+            <h2>Student Information</h2>
+            <hr>
+            <div>
+                <label for="">name</label>
+                <input type="text" name="stName" id="stName" required
+                value="anh sang" 
+                placeholder="nhap ten sinh vien">
+            </div>
+
+            <div>
+                <label for="">gender</label>
+                <input type="radio" name="gender" 
+                id="male" value="male" checked> male 
+                <input type="radio" name="gender" id="female" value="female" > female 
+            </div>
+
+            <div>
+                <label for="">email</label>
+                <input type="email" name="mail" id="mail" required value="example@gmail.com">
+            </div>
+
+            <div>
+                <label for="">phone</label>
+                <input type="tel" name="phone" id="phone" 
+                required
+                placeholder="xxx-xxxxx[xxx] (x:digit)"
+                value="100-12345"
+                pattern="\d{3}-\d{5,8}">
+            </div>
+
+            <div>
+                <label for="">qualification</label>
+                <select name="qua" id="qua" required>
+                    <option value="Bd">Bachelor Degree</option>
+                    <option value="Ms" selected>Master</option>
+                    <option value="PhD">PhD</option>
+                    <option value="none">None</option>
+                </select>
+            </div>
+
+            <div>
+                <button type="submit" style="background-color: red;">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
