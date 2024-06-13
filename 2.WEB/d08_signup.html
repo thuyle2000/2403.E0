@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up</title>
+    <link rel="stylesheet" href="css/form.css">
+    <script src="js/d08_signup.js"></script>
+
+</head>
+<body>
+    <div>
+        <form action="d07_login.html" onsubmit="return kiemTraDN();">
+            <h2>sign-up</h2>
+            <hr>
+            <div>
+                <label for="">email</label>
+                <input type="mail" name="email" id="email" placeholder="email dang nhap"
+                value="aptech@fpt.edu.vn"
+                required> 
+            </div>
+            <div>
+                <label for="">password</label>
+                <input type="password" name="pass1" id="pass1"
+                placeholder="mat khau dang nhap" 
+                value="123"
+                required>
+            </div>
+            <div>
+                <label for="">password confirm</label>
+                <input type="password" name="pass2" id="pass2"
+                placeholder="nhap lai mat khau " 
+                value="123"
+                required>
+            </div>
+
+            <div style="margin-top: 30px;text-align: center;">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

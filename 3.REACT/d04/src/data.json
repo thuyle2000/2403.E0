@@ -1,0 +1,32 @@
+[
+    {
+        "id": "B01",
+        "title": "Lap trinh C",
+        "author": "MS-DOS",
+        "price": 200
+    },
+    {
+        "id": "B02",
+        "title": "Thiet ke Web",
+        "author": "W3School",
+        "price": 260
+    },
+    {
+        "id": "B03",
+        "title": "Thiet ke UI/UX",
+        "author": "Orielly",
+        "price": 150
+    },
+    {
+        "id": "B04",
+        "title": "Lap trinh ung dung ReactJS",
+        "author": "Facebook",
+        "price": 340
+    },
+    {
+        "id": "B05",
+        "title": "Thiet ke va Quan tri CSDL",
+        "author": "Oracle",
+        "price": 450
+    }
+]

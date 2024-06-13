@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ui-ux</title>
+
+    <!-- keo link bootstrap 5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        h2{
+            color: green;
+        }
+        h3{
+            color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h2>Bootstrap 5 demo</h2>
+        <hr>
+
+        <!-- TOOLTIP demo -->
+        <h3>Tooltip Positioning</h3>
+        <p>The data-bs-placement attribute specifies the tooltip position.</p>
+        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="len tren">Top</a>
+        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="xuong duoi">Bottom</a>
+        <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="nhay sang trai">Left</a>
+        <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="sang ben phai">Right</a>
+
+
+
+        <!-- Carousel demo -->
+        <div class="mt-5">
+            <h3>Carousel Example</h3>
+            <p>The following example shows how to create a basic carousel with indicators and controls.</p>
+        </div>
+
+        <div id="demo" class="carousel slide" data-bs-ride="carousel"  style="width: 70%;">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000" >
+                    <img src="images/car1.png" alt="Los Angeles" class="d-block" style="width:100%">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/car2.png" alt="Chicago" class="d-block" style="width:100%">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/car3.png" alt="New York" class="d-block" style="width:100%">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+
+
+
+    </div>
+
+
+</body>
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+</script>
+
+</html>
